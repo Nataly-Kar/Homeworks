@@ -1,0 +1,321 @@
+{
+	"info": {
+		"_postman_id": "15b698e6-37ba-411f-8a74-17fd187f3e8b",
+		"name": "API Test (level 2)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25451616"
+	},
+	"item": [
+		{
+			"name": "USER INFO",
+			"item": [
+				{
+					"name": "200: User info",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://em.staging.api.onereach.ai/http/1b3bebb7-e882-4f1e-a74b-ee381bfa69d6/users?id=aab11c73-efd1-49e0-8da8-d415c101df2e",
+							"protocol": "https",
+							"host": [
+								"em",
+								"staging",
+								"api",
+								"onereach",
+								"ai"
+							],
+							"path": [
+								"http",
+								"1b3bebb7-e882-4f1e-a74b-ee381bfa69d6",
+								"users"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "aab11c73-efd1-49e0-8da8-d415c101df2e"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "400: User info",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://em.staging.api.onereach.ai/http/1b3bebb7-e882-4f1e-a74b-ee381bfa69d6/users?name=Tetiana",
+							"protocol": "https",
+							"host": [
+								"em",
+								"staging",
+								"api",
+								"onereach",
+								"ai"
+							],
+							"path": [
+								"http",
+								"1b3bebb7-e882-4f1e-a74b-ee381bfa69d6",
+								"users"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Tetiana"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "EDIT User",
+			"item": [
+				{
+					"name": "200: Edit user",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"9c09494f-f679-460c-b96e-85061662383c\",\r\n    \"name\": \"Tetiana123\",\r\n    \"age\": 28,\r\n    \"gender\": \"female\",\r\n    \"city\": \"Kyiv\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://em.staging.api.onereach.ai/http/1b3bebb7-e882-4f1e-a74b-ee381bfa69d6/users",
+							"protocol": "https",
+							"host": [
+								"em",
+								"staging",
+								"api",
+								"onereach",
+								"ai"
+							],
+							"path": [
+								"http",
+								"1b3bebb7-e882-4f1e-a74b-ee381bfa69d6",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "400: Edit user",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"aab11c73-efd1-49e0-8da8-d415c101df2e\",\r\n    \"name\": \"Tania\",\r\n    \"age\": 28,\r\n    \"gender\": 0,\r\n    \"city\": \"Kharkiv\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://em.staging.api.onereach.ai/http/1b3bebb7-e882-4f1e-a74b-ee381bfa69d6/users",
+							"protocol": "https",
+							"host": [
+								"em",
+								"staging",
+								"api",
+								"onereach",
+								"ai"
+							],
+							"path": [
+								"http",
+								"1b3bebb7-e882-4f1e-a74b-ee381bfa69d6",
+								"users"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "DELETE User",
+			"item": [
+				{
+					"name": "200: Delete user",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://em.staging.api.onereach.ai/http/1b3bebb7-e882-4f1e-a74b-ee381bfa69d6/users?id=aab11c73-efd1-49e0-8da8-d415c101df2e",
+							"protocol": "https",
+							"host": [
+								"em",
+								"staging",
+								"api",
+								"onereach",
+								"ai"
+							],
+							"path": [
+								"http",
+								"1b3bebb7-e882-4f1e-a74b-ee381bfa69d6",
+								"users"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "aab11c73-efd1-49e0-8da8-d415c101df2e"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "400: Delete user",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 400\", function () {\r",
+									"    pm.response.to.have.status(400);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://em.staging.api.onereach.ai/http/1b3bebb7-e882-4f1e-a74b-ee381bfa69d6/users?name=Tetiana",
+							"protocol": "https",
+							"host": [
+								"em",
+								"staging",
+								"api",
+								"onereach",
+								"ai"
+							],
+							"path": [
+								"http",
+								"1b3bebb7-e882-4f1e-a74b-ee381bfa69d6",
+								"users"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Tetiana"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "CREATE User",
+			"item": [
+				{
+					"name": "200: Create user",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Tetiana\",\r\n    \"age\": \"28\",\r\n    \"gender\": \"female\",\r\n    \"city\": \"Kharkiv\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://em.staging.api.onereach.ai/http/1b3bebb7-e882-4f1e-a74b-ee381bfa69d6/users",
+							"protocol": "https",
+							"host": [
+								"em",
+								"staging",
+								"api",
+								"onereach",
+								"ai"
+							],
+							"path": [
+								"http",
+								"1b3bebb7-e882-4f1e-a74b-ee381bfa69d6",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "400: Create user",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Tania\",\r\n    \"age\": \"28\",\r\n    \"gender\": \"female\",\r\n    \"city\": \"Kharkiv\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://em.staging.api.onereach.ai/http/1b3bebb7-e882-4f1e-a74b-ee381bfa69d6/users",
+							"protocol": "https",
+							"host": [
+								"em",
+								"staging",
+								"api",
+								"onereach",
+								"ai"
+							],
+							"path": [
+								"http",
+								"1b3bebb7-e882-4f1e-a74b-ee381bfa69d6",
+								"users"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
