@@ -1,0 +1,726 @@
+{
+  "id": "a5d38665-3209-40e3-8a2d-2241f1fcac61",
+  "version": "2.0",
+  "name": "Test1",
+  "url": "https://rozetka.com.ua/",
+  "tests": [{
+    "id": "30b12eb1-0996-4214-aed4-4ea5e417d404",
+    "name": "Untitled",
+    "commands": []
+  }, {
+    "id": "795f5f8b-a37e-446d-a5dd-c061ded9584b",
+    "name": "Test case - Перевірка реєстрації (невалідна)",
+    "commands": [{
+      "id": "203fabc3-c4ea-4aef-8bc3-3a5582a448aa",
+      "comment": "",
+      "command": "open",
+      "target": "https://rozetka.com.ua",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6673a5ef-d161-404a-a9d4-f248a9021644",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1333x768",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "10906566-dcec-48c7-90b0-d2bcb7c4b118",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=.header-actions__item--user svg",
+      "targets": [
+        ["css=.header-actions__item--user svg", "css:finder"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "a44c1814-ee65-47af-8116-78c94d0ec04d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.header-actions__item--user svg",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "80c9649a-e3e9-4724-a147-9bce79ed761a",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath=//button[contains(.,'Зарегистрироваться')]",
+      "targets": [
+        ["css=.auth-modal__register-link", "css:finder"],
+        ["xpath=//div[5]/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Зарегистрироваться')]", "xpath:innerText"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "8e43e6d1-3ba2-467d-a5c0-1ed1a9b7d434",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Зарегистрироваться')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7813518c-c3e4-45d4-b7a4-6b1c812f6462",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath=//input[@id='registerUserName']",
+      "targets": [
+        ["id=registerUserName", "id"],
+        ["css=#registerUserName", "css:finder"],
+        ["xpath=//input[@id='registerUserName']", "xpath:attributes"],
+        ["xpath=//fieldset/div/input", "xpath:position"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "83d291c5-8803-4fd1-be28-808c1e81e6c8",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input[@id='registerUserName']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c6e575c8-b9c0-464e-90a6-368563892608",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[@id='registerUserName']",
+      "targets": [],
+      "value": "Anna"
+    }, {
+      "id": "3f3e6ceb-9cfd-44b9-8d98-dc63e6fac48c",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input[@id='registerUserSurname']",
+      "targets": [
+        ["id=registerUserSurname", "id"],
+        ["css=#registerUserSurname", "css:finder"],
+        ["xpath=//input[@id='registerUserSurname']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2bf9b0b2-4749-414a-8c4f-6ef5505c03df",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[@id='registerUserSurname']",
+      "targets": [],
+      "value": "Малик"
+    }, {
+      "id": "1c6a96ef-a56f-47ec-8706-85fb44eae2fc",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input[@id='registerUserPhone']",
+      "targets": [
+        ["id=registerUserPhone", "id"],
+        ["css=#registerUserPhone", "css:finder"],
+        ["xpath=//input[@id='registerUserPhone']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6b0f0d9a-ccf5-4880-99c1-7c4504e39719",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[@id='registerUserPhone']",
+      "targets": [],
+      "value": "0997251467"
+    }, {
+      "id": "175dfc86-f765-490a-8b7c-97cf906981a2",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input[@id='registerUserEmail']",
+      "targets": [
+        ["id=registerUserEmail", "id"],
+        ["css=#registerUserEmail", "css:finder"],
+        ["xpath=//input[@id='registerUserEmail']", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fa0a7bb5-d8df-4808-972b-75aa841f47e2",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[@id='registerUserEmail']",
+      "targets": [],
+      "value": "malik@gmail.com"
+    }, {
+      "id": "8db26ff2-ad2a-4904-84a4-473608a25c64",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input[@id='registerUserPassword']",
+      "targets": [
+        ["id=registerUserPassword", "id"],
+        ["css=#registerUserPassword", "css:finder"],
+        ["xpath=//input[@id='registerUserPassword']", "xpath:attributes"],
+        ["xpath=//div[5]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "58053cc9-2dfe-4731-bc7f-127ede91603f",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[@id='registerUserPassword']",
+      "targets": [],
+      "value": "0000"
+    }, {
+      "id": "250eab10-e8d4-4526-b4fc-91ca8cbb2d8f",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=.errors-list__item:nth-child(3) > .errors-list__icon",
+      "targets": [
+        ["css=.errors-list__item:nth-child(3) > .errors-list__icon", "css:finder"]
+      ],
+      "value": "10000"
+    }, {
+      "id": "871a16b6-196e-468e-b8a0-e97edf7df915",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.errors-list__item:nth-child(3) > .errors-list__icon",
+      "targets": [
+        ["css=.errors-list__item:nth-child(3) > .errors-list__icon", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "8e0b5a67-3c09-4e1c-a642-26c908ab9a65",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.errors-list__item:nth-child(5) > .errors-list__icon",
+      "targets": [
+        ["css=.errors-list__item:nth-child(5) > .errors-list__icon", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "f9f396e3-176a-4296-b25b-c43cb3f05951",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Зарегистрироваться')]",
+      "targets": [
+        ["css=.auth-modal__submit", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[8]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Зарегистрироваться')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c59afff8-6367-479e-b1bd-92d7f0cbc47f",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//p[contains(.,'Введите свое имя на кириллице')]",
+      "targets": [
+        ["css=.validation-message:nth-child(1)", "css:finder"],
+        ["xpath=//form-error/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Введите свое имя на кириллице')]", "xpath:innerText"]
+      ],
+      "value": "Введите свое имя на кириллице"
+    }]
+  }, {
+    "id": "0683167e-0e20-4d12-9899-ea5c9b1f5973",
+    "name": "Test case - Додавання товару в корзину",
+    "commands": [{
+      "id": "65e42543-2eaf-4383-839a-68db1f98665a",
+      "comment": "",
+      "command": "open",
+      "target": "https://rozetka.com.ua/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b0f6d87a-a870-42e3-aa35-0a3ed78c3566",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1333x768",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8ca373f8-2ab1-4d09-af9a-d9a78bca74bc",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath=//rz-sidebar-fat-menu/div/ul/li[4]/a",
+      "targets": [
+        ["linkText=Бытовая техника", "linkText"],
+        ["css=.menu-categories_type_main > .menu-categories__item:nth-child(4) > .menu-categories__link", "css:finder"],
+        ["xpath=(//a[contains(text(),'Бытовая техника')])[3]", "xpath:link"],
+        ["xpath=(//a[contains(@href, 'https://bt.rozetka.com.ua/')])[4]", "xpath:href"],
+        ["xpath=//rz-sidebar-fat-menu/div/ul/li[4]/a", "xpath:position"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "d894aebc-a769-4880-936e-200a12ac99ab",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//rz-sidebar-fat-menu/div/ul/li[4]/a",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "aa851176-534d-4a5b-a23c-51ff9a9a8348",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath=//a[contains(@href, 'https://bt.rozetka.com.ua/washing_machines/c80124/')]",
+      "targets": [
+        ["linkText=Стиральные машины", "linkText"],
+        ["css=.ng-star-inserted:nth-child(3) > .portal-section .portal-grid__cell:nth-child(1) .tile-cats__item:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Стиральные машины')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://bt.rozetka.com.ua/washing_machines/c80124/')]", "xpath:href"],
+        ["xpath=//rz-list-tile/div/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Стиральные машины')]", "xpath:innerText"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "c4686f5d-2408-4c69-a866-4f6bb83c6a74",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[contains(@href, 'https://bt.rozetka.com.ua/washing_machines/c80124/')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "316e7ce2-8a32-4cbc-bfd7-ca81da783d2c",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath=//span[contains(.,'Стиральная машина узкая SAMSUNG WW62J42E0HW/UA')]",
+      "targets": [
+        ["css=.catalog-grid__cell:nth-child(13) .goods-tile__title", "css:finder"],
+        ["xpath=//li[13]/rz-catalog-tile/app-goods-tile-default/div/div[2]/a[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Стиральная машина узкая SAMSUNG WW62J42E0HW/UA')]", "xpath:innerText"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "67ef21ad-c8bb-4e81-90aa-05f5521402a2",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//span[contains(.,'Стиральная машина узкая SAMSUNG WW62J42E0HW/UA')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b7694ce3-96b6-4f88-b6fd-918ff37f1858",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath=//span[contains(.,'Купить')]",
+      "targets": [
+        ["css=.buy-button__label", "css:finder"],
+        ["xpath=//div[@id='#scrollArea']/div/div[2]/rz-product-main-info/div/div/ul/li/rz-product-buy-btn/app-buy-button/button/span", "xpath:idRelative"],
+        ["xpath=//button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Купить')]", "xpath:innerText"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "8e3127b1-f75d-47eb-bee1-0b8d2dc95c8a",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//span[contains(.,'Купить')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2805217c-ec40-47fc-9015-ba8f80c17d3f",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//span[contains(.,'1')]",
+      "targets": [
+        ["css=.badge", "css:finder"],
+        ["xpath=//rz-icon-badge/span", "xpath:position"],
+        ["xpath=//span[contains(.,'1')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bf308436-271d-4fd7-88a0-85cb127f5a67",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//h3[contains(.,'Корзина')]",
+      "targets": [
+        ["css=.modal__heading", "css:finder"],
+        ["xpath=//div[3]/div/h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Корзина')]", "xpath:innerText"]
+      ],
+      "value": "Корзина"
+    }]
+  }, {
+    "id": "712d0715-5f40-4037-97d0-5ad690b423bf",
+    "name": "Test case - Видалення товару з корзини",
+    "commands": [{
+      "id": "e17f5630-fa4f-4d15-bc74-81aeb480b109",
+      "comment": "",
+      "command": "open",
+      "target": "https://rozetka.com.ua/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5f6edec0-d2c9-4b7c-8579-f5af1f0dbbf1",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1333x768",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2fbd7fa3-a3c6-45be-9d8c-0aa0c189c3bf",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath=(//a[contains(text(),'Ноутбуки и компьютеры')])[3]",
+      "targets": [
+        ["linkText=Ноутбуки и компьютеры", "linkText"],
+        ["css=.menu-categories_type_main > .menu-categories__item:nth-child(1) > .menu-categories__link", "css:finder"],
+        ["xpath=(//a[contains(text(),'Ноутбуки и компьютеры')])[3]", "xpath:link"],
+        ["xpath=(//a[contains(@href, 'https://rozetka.com.ua/computers-notebooks/c80253/')])[2]", "xpath:href"],
+        ["xpath=//rz-sidebar-fat-menu/div/ul/li/a", "xpath:position"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "73a69a13-cfed-4249-837e-b6d72fe5e9ee",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=(//a[contains(text(),'Ноутбуки и компьютеры')])[3]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "18878cd8-87bd-4a02-8b94-9c236fab5d87",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath=//img[@alt='Ноутбуки']",
+      "targets": [
+        ["css=.ng-star-inserted:nth-child(3) > .portal-section .portal-grid__cell:nth-child(1) .tile-cats__picture > .ng-star-inserted", "css:finder"],
+        ["xpath=//img[@alt='Ноутбуки']", "xpath:img"],
+        ["xpath=//rz-list-tile/div/a/img", "xpath:position"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "1e7f9a0b-908a-4dd5-9908-c57a3ed393d5",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//img[@alt='Ноутбуки']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6873da0c-bc79-4da0-9fb4-d7b2ad369ad0",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath=//span[contains(.,'Ноутбук Acer Aspire 7 A715-42G-R3EZ (NH.QBFEU.00C) Charcoal Black / AMD Ryzen 5 5500U / RAM 16 ГБ / SSD 512 ГБ / nVidia GeForce GTX 1650')]",
+      "targets": [
+        ["css=.catalog-grid__cell:nth-child(1) .goods-tile__title", "css:finder"],
+        ["xpath=//a[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Ноутбук Acer Aspire 7 A715-42G-R3EZ (NH.QBFEU.00C) Charcoal Black / AMD Ryzen 5 5500U / RAM 16 ГБ / SSD 512 ГБ / nVidia GeForce GTX 1650')]", "xpath:innerText"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "82a89a47-db1e-48de-95d5-b7b7e86aa6d7",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//span[contains(.,'Ноутбук Acer Aspire 7 A715-42G-R3EZ (NH.QBFEU.00C) Charcoal Black / AMD Ryzen 5 5500U / RAM 16 ГБ / SSD 512 ГБ / nVidia GeForce GTX 1650')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4a4dd128-4583-460b-a2d4-2c44ff872f97",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath=//button[contains(.,'Купить')]",
+      "targets": [
+        ["css=.ng-star-inserted > .buy-button", "css:finder"],
+        ["xpath=(//button[@type='button'])[21]", "xpath:attributes"],
+        ["xpath=//div[@id='#scrollArea']/div/div[2]/rz-product-main-info/div/div/ul/li/rz-product-buy-btn/app-buy-button/button", "xpath:idRelative"],
+        ["xpath=//app-buy-button/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Купить')]", "xpath:innerText"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "14eec2ff-aaf1-4902-9807-5173bc3138ae",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Купить')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1da955c7-f529-49fc-82e3-5f769b0b6cb8",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath=//span[contains(.,'Удалить все')]",
+      "targets": [
+        ["css=.button > .button", "css:finder"],
+        ["xpath=//rz-popup-menu/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Удалить все')]", "xpath:innerText"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "f313c02b-636a-4b51-bd6d-bd09637a99f6",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//span[contains(.,'Удалить все')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a61de3b6-2bb1-40cf-aa9d-2558add28cd8",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//span[contains(.,'Удалить все')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "32eb0a03-b03b-491d-8127-eb835690c97f",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=.popup-menu__item > .button--gray",
+      "targets": [
+        ["css=.popup-menu__item > .button--gray", "css:finder"],
+        ["xpath=(//button[@type='button'])[96]", "xpath:attributes"],
+        ["xpath=//rz-popup-menu/div/ul/li/button", "xpath:position"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "d8297f72-998f-40b5-bf0b-8350cf0744c3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.popup-menu__item > .button--gray",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c18a6d30-b999-4a4c-aece-0ff5be3e9ef2",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath=//rz-single-modal-window/div[3]/div[2]",
+      "targets": [
+        ["css=.modal__content", "css:finder"],
+        ["xpath=//rz-single-modal-window/div[3]/div[2]", "xpath:position"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "61147f34-3498-4370-ab7f-2ab0f08df7ce",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//div/div/h4",
+      "targets": [
+        ["css=.cart-dummy__heading", "css:finder"],
+        ["xpath=//div/div/h4", "xpath:position"],
+        ["xpath=//h4[contains(.,'Корзина пуста')]", "xpath:innerText"]
+      ],
+      "value": "Корзина пуста"
+    }]
+  }, {
+    "id": "e461ca42-2eb8-4ec6-ab77-934534d82224",
+    "name": "Test case - Повернення на головну сторінку при натисканні на логотип",
+    "commands": [{
+      "id": "2e8b1dcf-ca81-4603-9077-b4a52c260070",
+      "comment": "",
+      "command": "open",
+      "target": "https://rozetka.com.ua/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dddbc7b1-9b64-4d5a-8ad4-d95339e4144d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1333x768",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "864c30cf-1906-492f-abaf-c868c369867c",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath=//button[contains(.,'Каталог')]",
+      "targets": [
+        ["id=fat-menu", "id"],
+        ["css=#fat-menu", "css:finder"],
+        ["xpath=//button[@id='fat-menu']", "xpath:attributes"],
+        ["xpath=//rz-header-fat-menu/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Каталог')]", "xpath:innerText"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "6f26b272-8ab6-45c2-84ad-19493f26fac3",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Каталог')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "66bd9b5c-39ce-4da9-b48b-e26e1d88d8c7",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath=//a[contains(.,'Комплектующие')]",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "78027301-2216-40be-be5a-079c08192808",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[contains(.,'Комплектующие')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a7dab887-fbbc-4d47-9376-794e15308347",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//h1[contains(.,'Компьютерные комплектующие')]",
+      "targets": [],
+      "value": "Компьютерные комплектующие"
+    }, {
+      "id": "a426d3d7-f802-43fd-9112-ceb83fe5ef45",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath=//li[2]/a/span[2]/span",
+      "targets": [
+        ["css=.portal-navigation__item:nth-child(2) .portal-navigation__link-text", "css:finder"],
+        ["xpath=//li[2]/a/span[2]/span", "xpath:position"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "f4c1ce70-5711-4fc0-bbe9-1fdf13b58f16",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//li[2]/a/span[2]/span",
+      "targets": [
+        ["css=.portal-navigation__item:nth-child(2) .portal-navigation__link-text", "css:finder"],
+        ["xpath=//li[2]/a/span[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "455c0cbd-033f-49b1-aa4a-124b0295d84e",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//img[@alt='Rozetka Logo']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a46e609f-1ede-4c95-82f5-70a3211fe6bb",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=img:nth-child(3)",
+      "targets": [
+        ["css=img:nth-child(3)", "css:finder"],
+        ["xpath=//img[@alt='Rozetka Logo']", "xpath:img"],
+        ["xpath=//picture/img", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "c53ec3a5-bccc-450d-b7f2-979447c4ac3c",
+    "name": "Test case - Перевірка роботи пошукового вікна",
+    "commands": [{
+      "id": "df7c9d72-b54d-4c61-bee1-2fd2dbfb06e6",
+      "comment": "",
+      "command": "open",
+      "target": "https://rozetka.com.ua/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "810e8dfc-ea44-4478-a8d8-91967163cd18",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1333x768",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d999f44b-39f6-4211-b37c-c18f07e769c4",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath=//input[@name='search']",
+      "targets": [
+        ["name=search", "name"],
+        ["css=.search-form__input", "css:finder"],
+        ["xpath=//input[@name='search']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "fcd015d4-b4c3-4813-8ddd-45d9e17ee126",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input[@name='search']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e75b00e2-19d2-4d88-a41a-0eb4ba545448",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[@name='search']",
+      "targets": [],
+      "value": "теле"
+    }, {
+      "id": "27816e0a-6223-4528-b9d8-a692d6b063bd",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath=//a[contains(.,'Телевизоры')]",
+      "targets": [
+        ["linkText=Телевизоры", "linkText"],
+        ["css=.search-suggest__item_state_active > .search-suggest__item-content", "css:finder"],
+        ["xpath=//a[contains(text(),'Телевизоры')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://rozetka.com.ua/all-tv/c80037/')]", "xpath:href"],
+        ["xpath=//li[6]/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Телевизоры')]", "xpath:innerText"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "66d4ae04-87fe-4ad5-bddd-00b7333c57ef",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[contains(.,'Телевизоры')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bc44bbe1-263e-40ca-9caf-fe033fc97fa2",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.catalog-heading",
+      "targets": [
+        ["css=.catalog-heading", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Телевизоры')]", "xpath:innerText"]
+      ],
+      "value": "Телевизоры"
+    }, {
+      "id": "cbea23d9-9493-4980-9b0d-1fffec8046bf",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input[@name='search']",
+      "targets": [
+        ["name=search", "name"],
+        ["css=.search-form__input", "css:finder"],
+        ["xpath=//input[@name='search']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "24113c9c-7f6a-4fba-9f7b-1535a2ff2dcd",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[@name='search']",
+      "targets": [],
+      "value": "ноутбук"
+    }, {
+      "id": "99f3c7bd-4581-47b6-aaf7-079121fbe15a",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.button_color_green",
+      "targets": [
+        ["css=.button_color_green", "css:finder"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Найти')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e6eb7f49-0a16-4de6-9ac5-14316292502d",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Найти')]",
+      "targets": [
+        ["css=.button_color_green", "css:finder"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Найти')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "115a1eac-5e46-4ab7-903a-49a8d7dfd3b6",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//h1[contains(.,'Ноутбуки')]",
+      "targets": [
+        ["css=.catalog-heading", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Ноутбуки')]", "xpath:innerText"]
+      ],
+      "value": "Ноутбуки"
+    }]
+  }],
+  "suites": [{
+    "id": "3abfccc2-91b8-4273-b7cf-2a9e7ca2324c",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["30b12eb1-0996-4214-aed4-4ea5e417d404"]
+  }],
+  "urls": ["https://rozetka.com.ua/"],
+  "plugins": []
+}
